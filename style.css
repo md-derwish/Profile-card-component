@@ -1,0 +1,103 @@
+/* Variable Styles */
+/* ============================================== */
+:root {
+    --bg-clr: hsl(185, 75%, 39%);
+    --font-hd-clr: hsl(229, 23%, 23%);
+    --font-sub-clr: hsl(227, 10%, 46%);
+    --font-clr: hsl(0, 0%, 59%);
+    --font-size: 1.125rem;
+    --font-fam: kumbh sans;
+    --bg-card-clr: white;
+    --wt-400: 400;
+    --wt-700: 700;
+
+}
+
+/* Add background photos with mobile-first design values */
+/* ============================================== */
+html {
+    height: 100%;
+    background-image: url(images/bg-pattern-top.svg),
+     url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left -43.75rem top -31.25rem , right -40rem bottom -34.375rem;
+    background-color: var(--bg-clr);
+    box-sizing: border-box;
+}
+
+/* Desktop design query (max 1920px & min 1600px*/
+/* ============================================== */
+@media all and (min-width: 112rem) and (max-width: 125rem) {
+    html {
+        background-position: left -4.75rem top -26.25rem , right -5rem bottom -30.375rem;
+    }
+ }
+
+/* container styles */
+/* ============================================== */
+.container{
+    /* outline: 2px solid; */
+    display: grid;
+    box-sizing: inherit;
+    margin: auto;
+    max-width: 25rem;
+    margin-top: 15rem;
+    height: 28rem;
+    border-radius: 0.75rem;
+    background-repeat: no-repeat;
+    background-color: var(--bg-card-clr);
+    overflow: hidden;
+}
+
+/* Image container and background pic */
+/* ============================================== */
+.img {
+    width: 100%;
+    height: 130%;
+    background-image: url(images/bg-pattern-card.svg);
+    /* outline: 2px solid; */
+}
+
+/* image styles */
+/* ============================================== */
+img {
+    border-radius: 50%;
+    outline: 5px white solid;
+     position: relative;
+    top: 70%;
+    left: 37%;
+}
+
+/* text styles */
+/* ============================================== */
+h2, .victor {
+    font-size: var(--font-size);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3.5rem;
+    font-family: var(--font-fam);
+    color: var(--font-hd-clr);
+}
+
+/* sub-text styles */
+/* ============================================== */
+.fllw, .like, .photo {
+    display: inline-block;
+    text-align: center;
+    padding: auto;
+    margin: 2rem;
+    /* outline: 2px solid; */
+    font-size: var(--font-size);
+    font-family: var(--font-fam);
+    color: var(--font-hd-clr);
+}
+
+.fllw {
+    margin-left: 2.5rem;
+}
+
+/* span styles values */
+.v, .ld, .f, .l, .p {
+    color: var(--font-sub-clr);
+    font-weight: 400;
+}
